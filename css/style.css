@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio Header */
+header{
+    height: 80px;
+    background-color: #1e1c21;
+}
+
+.container-grid{
+    width: 1200px;
+    margin: auto;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo{
+    width: 280px;
+}
+
+.topo nav{
+    width: 660px;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.menu a:hover {
+    text-shadow: 0px 0px 10px white;
+    text-decoration: underline;
+}
+
+/* Fim Header */
+
+/* Inicio Banner */
+.banner {
+    height: 610px;
+    background-image: url(../img/Banner_1_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.conteudo-banner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.texto-banner{
+    color: white;
+    /* height: 495px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-banner h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold; 
+    font-size: 80px;
+}
+
+.texto-banner p{
+    font-size: 25px;
+}
+
+.texto-banner a{
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #c31616;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.texto-banner a:hover{
+    text-decoration: underline;
+}
+
+/* Fim Banner */
+
+/* Inicio Jogos */
+.jogos{
+    background-color: black;
+    height: 120px;
+}
+
+.conteudo-jogos{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-jogos img{
+    max-width: 220px;
+    transition: 0.5s;
+
+}
+
+.conteudo-jogos a:hover img{
+    transform: scale(1.5);
+}
+/* Fim Jogos */
+
+/* Início Sobre */
+.sobre{
+    height: 490px;
+    background-image: linear-gradient(rgba(0, 31, 112, 0.7), rgba(0, 31, 112, 0.7)), url(../img/bg-lol.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.container-faixa{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.faixa{
+    background-color: #000;
+    height: 85%;
+    width: 100%;
+    transform: skewY(-3deg);
+}
+.conteudo-sobre{
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.conteudo-sobre img{
+    width: 510px;
+}
+.texto-sobre{
+    width: 525px;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.texto-sobre h2{
+    font-size: 35px;
+}
+.texto-sobre p{
+    font-size: 18px;
+}
+/* Fim Sobre */
+
+/* inicio eventos */
+.eventos{
+    height: 120px;
+    color: #fff;
+    background-color: #000;
+}
+
+.container-eventos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.container-eventos h2{
+    text-transform: uppercase;
+    max-width: 90px;
+}
+
+.partida-eventos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 227px;
+}
+
+.partida-eventos p{
+    font-size: 25px;
+}
+
+.versus{
+    font-weight: bold;
+}
+
+.faixa-eventos{
+    width: 0px;
+    height: 72px;
+    border: 1px solid #fff;
+}
+
+/* fim eventos */
+
+/* inicio noticias */
+.noticias-jogos{
+    background-color: #1e1c21;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.noticias-jogos .container-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grupo-cards{
+    width: 820px;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-noticia{
+    height: 333px;
+    width: 215px;
+    background-image: linear-gradient(#8d8d8d, #000000);
+    box-shadow: 1px 1px 20px 4px #000000;
+}
+
+.card-noticia img{
+    width: inherit;
+}
+
+.card-noticia h3{
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+
+.card-noticia h3, .card-noticia p{
+    margin-left: 15px;
+}
+
+.card-noticia p{
+    margin-right: 10px;
+}
+
+.grupo-proximos-jogos{
+    width: 237px;
+    height: 730px;
+    background-image: linear-gradient(#000000, #585858, #000000);
+    box-shadow: 1px 1px 20px 4px #000000;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.proxima-partida{
+    text-align: center;
+    width: 189px;       
+}
+
+
+.times{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;            
+    margin-bottom: 10px;
+}
+
+.times img{
+    height: inherit;
+}
