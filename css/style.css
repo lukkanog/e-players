@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ header{
     height: 80px;
 }
 
-.logo{
+.logo-eplayers{
     width: 280px;
 }
 
@@ -298,3 +299,126 @@ header{
 .times img{
     height: inherit;
 }
+/* fim noticias */
+
+/* inifio footer */
+footer{
+    background-color: #000;
+    color: #fff;
+    font-family: "titillium web", "Roboto", sans-serif;
+}
+
+footer .container-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.links-footer{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+.links h2{
+    font-size: 24px;
+
+}
+
+.links ul{
+    margin-left: 40px;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.newsletter-media{
+    height: 172px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.newsletter{
+    max-width: 355px;
+}
+
+.newsletter p{
+    font-size: 14px;
+}
+
+.newsletter form{
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.newsletter form input{
+    height: 100%;
+    font-size: 24px;
+    margin: 0px;
+    font-family: inherit;
+}
+
+.newsletter form input[type="email"]{
+    padding: 5px;
+    width: 185px;
+    transition: 0.5s;
+}
+
+.newsletter form input[type="email"]:hover::placeholder,
+.newsletter form input[type="email"]:focus::placeholder{
+    color: #8326EF;
+}
+
+
+.newsletter form input[type="submit"]{
+    background-color: #8326EF;
+    margin: 0px;
+    border: unset;
+    color: #fff;
+    width: 156px;
+    transition: .5s;
+}
+
+
+.newsletter form input[type="submit"]:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+
+.midias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.midias p{
+    font-size: 24px;
+}
+
+.midias a img{
+    height: 44px;
+    transition: 0.3s;
+}
+
+.midias a img:hover{
+    filter: brightness(70%);
+}
+
+
